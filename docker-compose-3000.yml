@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  hvac-site:
+    build: .
+    container_name: birmingham-hvac
+    ports:
+      - "3000:3000"
+    restart: always
+    environment:
+      - NODE_ENV=production
+    networks:
+      - hvac-network
+
+networks:
+  hvac-network:
+    driver: bridge
