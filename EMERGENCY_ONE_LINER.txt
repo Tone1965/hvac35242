@@ -1,0 +1,34 @@
+EMERGENCY ONE-LINER FIXES - Copy and paste these directly:
+
+====================================================
+OPTION 1 - INSTANT PYTHON SERVER (Fastest):
+====================================================
+sudo fuser -k 80/tcp; cd /tmp; rm -rf birmingham-hvac; git clone https://github.com/Tone1965/birmingham-hvac.git && cd birmingham-hvac && sudo python3 -m http.server 80
+
+====================================================
+OPTION 2 - DOCKER INSTANT DEPLOY:
+====================================================
+docker stop $(docker ps -aq); docker rm $(docker ps -aq); docker run -d -p 80:80 -v /tmp/hvac:/usr/share/nginx/html --name hvac nginx; cd /tmp && rm -rf hvac && git clone https://github.com/Tone1965/birmingham-hvac.git hvac
+
+====================================================
+OPTION 3 - NUCLEAR CLEAN + DEPLOY:
+====================================================
+sudo systemctl stop nginx apache2; sudo fuser -k 80/tcp; sudo fuser -k 443/tcp; docker stop $(docker ps -aq); cd ~ && git clone https://github.com/Tone1965/birmingham-hvac.git hvac-site && cd hvac-site && sudo python3 -m http.server 80 &
+
+====================================================
+OPTION 4 - CHECK WHAT'S BEING SERVED:
+====================================================
+echo "=== CURRENT CONTENT ==="; curl -s http://localhost | grep -A2 -B2 -i "ranksavvy\|agents\|birmingham\|hvac" | head -20; echo "=== WHO'S SERVING ==="; sudo lsof -i :80
+
+====================================================
+TO RUN THESE:
+====================================================
+1. SSH into your server: ssh root@142.93.194.81
+2. Copy one of the above commands
+3. Paste and press Enter
+4. Check http://142.93.194.81 in an incognito window
+
+If STILL showing old content after trying these:
+- The issue is likely CloudFlare/CDN caching
+- Or a load balancer pointing to wrong server
+- Try: curl http://localhost on the server itself
