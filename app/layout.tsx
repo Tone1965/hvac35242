@@ -1,26 +1,22 @@
-import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
-import "./globals.css";
+import type { Metadata } from "next"
+import { Inter } from "next/font/google"
+import "./globals.css"
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "24/7 HVAC Repair Birmingham AL | Emergency AC Service",
-  description: "Professional HVAC repair service in Birmingham. 24/7 emergency response, transparent pricing.",
-};
+  title: "Birmingham HVAC - Professional Heating & Cooling Services",
+  description: "Birmingham's premier HVAC service provider. Installation, repair, and maintenance for residential and commercial properties.",
+}
 
 export default function RootLayout({
   children,
 }: Readonly<{
-  children: React.ReactNode;
+  children: React.ReactNode
 }>) {
-  return children;
+  return (
+    <html lang="en">
+      <body className={inter.className}>{children}</body>
+    </html>
+  )
 }
