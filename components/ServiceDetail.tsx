@@ -25,7 +25,12 @@ export default function ServiceDetail({
   serviceImage: string 
 }) {
   const t = translations[lang]
-  const service = t.services[serviceKey as keyof typeof t.services]
+  const serviceData = t.services[serviceKey as keyof typeof t.services]
+  
+  // Type guard to ensure we have a service object with title and desc
+  const service = typeof serviceData === 'object' && serviceData !== null && 'title' in serviceData && 'desc' in serviceData 
+    ? serviceData as { title: string; desc: string }
+    : { title: serviceKey, desc: '' }
   
   return (
     <main>

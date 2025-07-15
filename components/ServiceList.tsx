@@ -69,37 +69,46 @@ export default function ServiceList({ lang }: { lang: 'en' | 'es' }) {
   
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-      {services.map(({ icon: Icon, key, image, slug }) => (
-        <div key={key} className="bg-white rounded-lg shadow-lg overflow-hidden">
-          <div className="relative h-48">
-            <Image
-              src={image}
-              alt={t.services[key as keyof typeof t.services].title}
-              fill
-              className="object-cover"
-            />
-          </div>
-          
-          <div className="p-6">
-            <div className="flex items-center mb-4">
-              <Icon className="w-8 h-8 text-primary mr-3" />
-              <h3 className="text-xl font-semibold">
-                {t.services[key as keyof typeof t.services].title}
-              </h3>
+      {services.map(({ icon: Icon, key, image, slug }) => {
+        const serviceData = t.services[key as keyof typeof t.services]
+        
+        // Type guard to ensure we have a service object with title and desc
+        const service = typeof serviceData === 'object' && serviceData !== null && 'title' in serviceData && 'desc' in serviceData 
+          ? serviceData as { title: string; desc: string }
+          : { title: key, desc: '' }
+        
+        return (
+          <div key={key} className="bg-white rounded-lg shadow-lg overflow-hidden">
+            <div className="relative h-48">
+              <Image
+                src={image}
+                alt={service.title}
+                fill
+                className="object-cover"
+              />
             </div>
             
-            <p className="text-slate-600 mb-6">
-              {t.services[key as keyof typeof t.services].desc}
-            </p>
-            
-            <Link href={`/${lang}/services/${slug}`}>
-              <Button className="w-full">
-                {lang === 'en' ? 'Learn More' : 'Más Información'}
-              </Button>
-            </Link>
+            <div className="p-6">
+              <div className="flex items-center mb-4">
+                <Icon className="w-8 h-8 text-primary mr-3" />
+                <h3 className="text-xl font-semibold">
+                  {service.title}
+                </h3>
+              </div>
+              
+              <p className="text-slate-600 mb-6">
+                {service.desc}
+              </p>
+              
+              <Link href={`/${lang}/services/${slug}`}>
+                <Button className="w-full">
+                  {lang === 'en' ? 'Learn More' : 'Más Información'}
+                </Button>
+              </Link>
+            </div>
           </div>
-        </div>
-      ))}
+        )
+      })}
     </div>
   )
 }

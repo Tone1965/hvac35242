@@ -106,20 +106,26 @@ export default function HomePage({ params }: { params: { lang: 'en' | 'es' } }) 
           </p>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {services.map(({ icon: Icon, key }) => (
-              <div 
-                key={key}
-                className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow border border-slate-200"
-              >
-                <Icon className="w-12 h-12 text-primary mb-4" />
-                <h3 className="text-xl font-semibold mb-2">
-                  {t.services[key as keyof typeof t.services].title}
-                </h3>
-                <p className="text-slate-600">
-                  {t.services[key as keyof typeof t.services].desc}
-                </p>
-              </div>
-            ))}
+            {services.map(({ icon: Icon, key }) => {
+              const service = t.services[key as keyof typeof t.services];
+              if (typeof service === 'object' && service.title && service.desc) {
+                return (
+                  <div 
+                    key={key}
+                    className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow border border-slate-200"
+                  >
+                    <Icon className="w-12 h-12 text-primary mb-4" />
+                    <h3 className="text-xl font-semibold mb-2">
+                      {service.title}
+                    </h3>
+                    <p className="text-slate-600">
+                      {service.desc}
+                    </p>
+                  </div>
+                );
+              }
+              return null;
+            })}
           </div>
           
           <div className="text-center mt-12">

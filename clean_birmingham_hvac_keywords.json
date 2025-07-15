@@ -1,0 +1,79 @@
+{
+  "metadata": {
+    "totalOriginal": 30,
+    "totalCleaned": 18,
+    "totalDiscarded": 12,
+    "qualityRate": "60.0%",
+    "cleanedAt": "2025-07-14T02:26:36.684Z"
+  },
+  "cleanKeywords": [
+    "emergency HVAC repair Birmingham Alabama",
+    "licensed HVAC contractor Hoover 35242",
+    "professional AC installation Mountain Brook 35223",
+    "certified furnace repair Vestavia Hills 35213",
+    "guaranteed heating service Chelsea Alabama",
+    "trusted HVAC maintenance Pelham 35124",
+    "experienced air conditioning repair Helena 35080",
+    "reliable furnace installation Trussville 35173",
+    "affordable HVAC service Alabaster 35007",
+    "same day AC repair Birmingham emergency",
+    "24/7 HVAC contractor Mountain Brook professional",
+    "commercial HVAC installation Birmingham Alabama",
+    "residential heating repair Hoover certified",
+    "heat pump maintenance Vestavia Hills licensed",
+    "birmingham service",
+    "HVAC repair Birmingham",
+    "heating service Alabama professional",
+    "air conditioning Birmingham emergency"
+  ],
+  "discardedKeywords": [
+    {
+      "keyword": "hvac stuff",
+      "reason": "Invalid length"
+    },
+    {
+      "keyword": "various things",
+      "reason": "Invalid length"
+    },
+    {
+      "keyword": "general repair",
+      "reason": "Invalid length"
+    },
+    {
+      "keyword": "basic hvac",
+      "reason": "Invalid length"
+    },
+    {
+      "keyword": "miscellaneous service",
+      "reason": "Contains useless words"
+    },
+    {
+      "keyword": "some hvac things birmingham",
+      "reason": "Contains useless words"
+    },
+    {
+      "keyword": "random air conditioning stuff",
+      "reason": "Contains useless words"
+    },
+    {
+      "keyword": "hvac repair",
+      "reason": "Invalid length"
+    },
+    {
+      "keyword": "ac",
+      "reason": "Invalid length"
+    },
+    {
+      "keyword": "emergency hvac repair and installation and maintenance service for residential and commercial customers in the greater birmingham alabama metropolitan area with professional certified licensed technicians available",
+      "reason": "Invalid length"
+    },
+    {
+      "keyword": "different hvac various things birmingham",
+      "reason": "Contains useless words"
+    },
+    {
+      "keyword": "general basic hvac stuff alabama",
+      "reason": "Contains useless words"
+    }
+  ]
+}

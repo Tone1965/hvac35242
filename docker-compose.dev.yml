@@ -1,0 +1,15 @@
+version: '3.8'
+services:
+  hvac-dev:
+    build: .
+    ports:
+      - "80:3000"
+    environment:
+      - NODE_ENV=development
+      - NEXT_PUBLIC_ENVIRONMENT=development
+    volumes:
+      - .:/app
+      - /app/node_modules
+      - /app/.next
+    restart: unless-stopped
+    command: npm run dev

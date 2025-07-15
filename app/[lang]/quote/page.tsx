@@ -4,7 +4,7 @@ import { Phone, Mail, MapPin, Clock, Shield, Star, CheckCircle } from "lucide-re
 import Image from "next/image"
 import Link from "next/link"
 
-export default function QuotePage({ params }: { params: { lang: "en"  < /dev/null |  "es" } }) {
+export default function QuotePage({ params }: { params: { lang: "en" | "es" } }) {
   return (
     <div>
       {/* Header */}

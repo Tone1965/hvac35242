@@ -18,15 +18,20 @@ function getLocale(request: NextRequest): string {
 export function middleware(request: NextRequest) {
   const pathname = request.nextUrl.pathname
   
+  // Allow Let's Encrypt ACME challenges to pass through
+  if (pathname.startsWith('/.well-known/acme-challenge/')) {
+    return NextResponse.next()
+  }
+  
   // Check if the pathname is missing a locale
   const pathnameIsMissingLocale = locales.every(
     (locale) => !pathname.startsWith(`/${locale}/`) && pathname !== `/${locale}`
   )
 
-  // Redirect if there is no locale
+  // REWRITE instead of redirect - no more 307!
   if (pathnameIsMissingLocale) {
     const locale = getLocale(request)
-    return NextResponse.redirect(
+    return NextResponse.rewrite(
       new URL(`/${locale}${pathname}`, request.url)
     )
   }

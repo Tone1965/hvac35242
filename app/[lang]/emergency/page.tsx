@@ -4,7 +4,7 @@ import { Phone, Clock, Shield, AlertTriangle, CheckCircle } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
 
-export default function EmergencyPage({ params }: { params: { lang: "en"  < /dev/null |  "es" } }) {
+export default function EmergencyPage({ params }: { params: { lang: "en" | "es" } }) {
   const emergencyReasons = [
     "Complete AC failure during Birmingham's 95° summer heat",
     "Furnace breakdown in freezing winter temperatures", 

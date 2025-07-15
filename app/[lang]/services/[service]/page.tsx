@@ -70,7 +70,8 @@ export async function generateMetadata({
     }
   }
   
-  const serviceName = t.services[serviceInfo.key as keyof typeof t.services].title
+  const service = t.services[serviceInfo.key as keyof typeof t.services];
+  const serviceName = typeof service === 'object' && service.title ? service.title : serviceInfo.key;
   
   return {
     title: `${serviceName} | Birmingham HVAC`,

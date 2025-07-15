@@ -1,0 +1,27 @@
+name: birmingham-hvac-prod
+region: nyc
+services:
+- name: web-prod
+  source_dir: /
+  github:
+    repo: Tone1965/birmingham-hvac
+    branch: main
+    deploy_on_push: false
+  dockerfile_path: Dockerfile
+  http_port: 3000
+  instance_count: 2
+  instance_size_slug: apps-s-1vcpu-2gb
+  routes:
+  - path: /
+  health_check:
+    http_path: /
+    initial_delay_seconds: 30
+    period_seconds: 10
+    timeout_seconds: 5
+    success_threshold: 1
+    failure_threshold: 3
+  envs:
+  - key: NODE_ENV
+    value: production
+  - key: NEXT_PUBLIC_ENVIRONMENT
+    value: production

@@ -1,0 +1,32 @@
+name: birmingham-hvac-production
+region: nyc
+domains:
+- domain: hvac35242.com
+  type: PRIMARY
+- domain: www.hvac35242.com
+  type: ALIAS
+services:
+- name: web
+  source_dir: /
+  github:
+    repo: Tone1965/birmingham-hvac
+    branch: main
+    deploy_on_push: true
+  dockerfile_path: Dockerfile
+  http_port: 3000
+  instance_count: 1
+  instance_size_slug: apps-s-1vcpu-2gb
+  routes:
+  - path: /
+  envs:
+  - key: NODE_ENV
+    value: production
+  - key: NEXT_PUBLIC_ENVIRONMENT
+    value: production
+  health_check:
+    http_path: /en/
+    initial_delay_seconds: 30
+    period_seconds: 10
+    timeout_seconds: 5
+    success_threshold: 1
+    failure_threshold: 3
