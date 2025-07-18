@@ -242,7 +242,7 @@ HEADLINE FORMULA: "Call Now: Birmingham's Emergency HVAC Experts"
 CONTENT ANGLE: Immediate problem resolution
 
 EXAMPLE:
-H1: "Emergency HVAC Repair Birmingham: Call (205) 830-1111 Now"
+H1: "Emergency HVAC Repair Birmingham: Call (205) 835-0111 Now"
 OPENING: "HVAC emergency in Birmingham? We're 15 minutes away..."
 ```
 
@@ -279,7 +279,7 @@ EXAMPLES:
 ```
 FORMULA: Specific Offer + Time Limit + Risk Reversal
 EXAMPLES:
-"FREE Birmingham Area HVAC Inspection (Today Only) - Call (205) 830-1111"
+"FREE Birmingham Area HVAC Inspection (Today Only) - Call (205) 835-0111"
 "Mountain Brook Special: $500 Off HVAC Installation (This Week Only)"
 "Vestavia Hills Emergency Special: Same-Day Service, No Extra Charge"
 ```
@@ -294,7 +294,7 @@ EXAMPLES:
 ```
 FORMULA: Primary Keyword | Location | Modifier | Brand
 EXAMPLES:
-"Emergency HVAC Repair Birmingham Alabama | 24/7 Service | Call (205) 830-1111"
+"Emergency HVAC Repair Birmingham Alabama | 24/7 Service | Call (205) 835-0111"
 "HVAC Installation Mountain Brook 35223 | Licensed & Insured | Free Quotes"
 "AC Repair Vestavia Hills 35213 | Same Day Service | Birmingham HVAC Pros"
 
@@ -326,9 +326,9 @@ EXAMPLES:
 ```
 FORMULA: Benefit + Proof + Call-to-Action + Phone
 EXAMPLES:
-"Professional HVAC repair in Birmingham, AL. Licensed, insured, 15+ years experience. Same-day service available. Call (205) 830-1111 for free estimate!"
+"Professional HVAC repair in Birmingham, AL. Licensed, insured, 15+ years experience. Same-day service available. Call (205) 835-0111 for free estimate!"
 
-"Emergency AC repair Birmingham. Available 24/7, even weekends. Serving Mountain Brook, Vestavia Hills, Hoover. Call (205) 830-1111 now!"
+"Emergency AC repair Birmingham. Available 24/7, even weekends. Serving Mountain Brook, Vestavia Hills, Hoover. Call (205) 835-0111 now!"
 ```
 
 #### **QUESTION KEYWORDS:**
@@ -337,7 +337,7 @@ FORMULA: Answer Preview + Local Relevance + Authority
 EXAMPLES:
 "HVAC repair in Birmingham costs $200-$800 average. Get honest pricing from licensed Alabama contractors. Free estimates, upfront pricing. Call today!"
 
-"Replace your HVAC system when it's 15+ years old or repair costs exceed 50% of replacement. Birmingham climate guide included. Expert advice: (205) 830-1111"
+"Replace your HVAC system when it's 15+ years old or repair costs exceed 50% of replacement. Birmingham climate guide included. Expert advice: (205) 835-0111"
 ```
 
 ### **SLUG OPTIMIZATION**

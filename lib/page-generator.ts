@@ -215,7 +215,7 @@ function generateDynamicContent(
   const localBenefits = `
     Serving ${locationDisplay} (${zipCode}) with:
     • Local Birmingham technicians who know Alabama climate
-    • Fast response times in the ${locationDisplay} area
+    • Quick service delivery in the ${locationDisplay} area
     • Familiar with ${locationDisplay} neighborhoods and homes
     • Understanding of local building codes and requirements
     • Relationships with ${locationDisplay} suppliers for fast parts
@@ -285,7 +285,7 @@ function generateFAQ(serviceDisplay: string, locationDisplay: string, zipCode?: 
     },
     {
       question: `How quickly can you respond to ${locationDisplay}${zipCode ? ` (${zipCode})` : ''}?`,
-      answer: `We typically respond to service calls in ${locationDisplay} within 2-4 hours during business hours, and within 1 hour for emergencies. Our local Birmingham location allows us to serve ${locationDisplay} quickly.`
+      answer: `We provide prompt response to service calls in ${locationDisplay} during business hours, and fast emergency response. Our local Birmingham location allows us to serve ${locationDisplay} quickly.`
     }
   ]
 }

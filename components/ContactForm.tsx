@@ -34,8 +34,8 @@ export default function ContactForm({ lang }: { lang: 'en' | 'es' }) {
     
     // Show success message
     alert(lang === 'en' 
-      ? 'Thank you! We will contact you within 1 hour.'
-      : '¡Gracias! Le contactaremos dentro de 1 hora.')
+      ? 'Thank you! We will contact you shortly.'
+      : '¡Gracias! Le contactaremos pronto.')
   }
   
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -129,8 +129,8 @@ export default function ContactForm({ lang }: { lang: 'en' | 'es' }) {
       
       <p className="text-sm text-slate-600 mt-4 text-center">
         {lang === 'en' 
-          ? 'For immediate assistance, call 205-830-1111'
-          : 'Para asistencia inmediata, llame 205-830-1111'}
+          ? 'For immediate assistance, call 205-835-0111'
+          : 'Para asistencia inmediata, llame 205-835-0111'}
       </p>
     </div>
   )

@@ -7,7 +7,7 @@ import { translations } from '@/lib/translations'
 const serviceData = {
   'same-day-hvac-repair': {
     key: 'sameDayRepair',
-    image: '/images/ac-repair.jpg'
+    image: '/images/same-day-hvac-repair.png'
   },
   'weekend-emergency-service': {
     key: 'weekendService',
@@ -75,7 +75,7 @@ export async function generateMetadata({
   
   return {
     title: `${serviceName} | Birmingham HVAC`,
-    description: `Professional ${serviceName} services in Birmingham, AL. 24/7 emergency response, licensed technicians, transparent pricing. Call 205-830-1111.`,
+    description: `Professional ${serviceName} services in Birmingham, AL. 24/7 emergency response, licensed technicians, transparent pricing. Call 205-835-0111.`,
     alternates: {
       languages: {
         'en': `/en/services/${params.service}`,

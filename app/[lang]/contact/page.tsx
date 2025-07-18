@@ -52,7 +52,7 @@ export default function ContactPage({ params }: { params: { lang: 'en' | 'es' } 
                       <h3 className="font-semibold text-lg mb-1">
                         {params.lang === 'en' ? 'Phone' : 'Teléfono'}
                       </h3>
-                      <p className="text-slate-600">205-830-1111</p>
+                      <p className="text-slate-600">205-835-0111</p>
                       <p className="text-sm text-slate-500">
                         {params.lang === 'en' 
                           ? '24/7 Emergency Service'
@@ -70,8 +70,8 @@ export default function ContactPage({ params }: { params: { lang: 'en' | 'es' } 
                       <p className="text-slate-600">service@birminghamhvac.com</p>
                       <p className="text-sm text-slate-500">
                         {params.lang === 'en' 
-                          ? 'We respond within 1 hour'
-                          : 'Respondemos dentro de 1 hora'}
+                          ? 'Fast response guaranteed'
+                          : 'Respuesta rápida garantizada'}
                       </p>
                     </div>
                   </div>
@@ -132,10 +132,10 @@ export default function ContactPage({ params }: { params: { lang: 'en' | 'es' } 
                       ? "Don't wait! Call us now for immediate assistance."
                       : "¡No espere! Llámenos ahora para asistencia inmediata."}
                   </p>
-                  <a href="tel:2058301111" className="inline-block">
+                  <a href="tel:2058350111" className="inline-block">
                     <div className="bg-white text-red-600 px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
                       <Phone className="inline-block w-5 h-5 mr-2" />
-                      205-830-1111
+                      205-835-0111
                     </div>
                   </a>
                 </div>

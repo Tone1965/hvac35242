@@ -13,11 +13,11 @@ export interface ZipCodeData {
   serviceAngle: string
   avgJobValue: string
   priority: number
-  coordinates: {
+  coordinates?: {
     lat: number
     lng: number
   }
-  landmarks: string[]
+  landmarks?: string[]
 }
 
 export const BIRMINGHAM_ZIP_CODES: ZipCodeData[] = [

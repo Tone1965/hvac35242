@@ -5,7 +5,7 @@ export const translations = {
       home: "Home",
       services: "Services",
       contact: "Contact",
-      emergency: "24/7 Emergency: 205-830-1111"
+      emergency: "24/7 Emergency: 205-835-0111"
     },
     
     // Hero Section
@@ -53,8 +53,8 @@ export const translations = {
         desc: "No hidden fees, upfront quotes"
       },
       guarantees: {
-        title: "Response Time Guarantees",
-        desc: "On-time arrival or service is free"
+        title: "Fast Response Guarantees",
+        desc: "Quick arrival or service is free"
       }
     },
     
@@ -72,13 +72,13 @@ export const translations = {
       phone: "Phone",
       message: "Message",
       submit: "Send Message",
-      callNow: "Call Now: 205-830-1111"
+      callNow: "Call Now: 205-835-0111"
     },
     
     // SEO Content
     seo: {
       metaTitle: "24/7 Emergency HVAC Repair Birmingham AL | Same-Day AC Service",
-      metaDesc: "Birmingham's trusted HVAC repair service. 24/7 emergency response, same-day repairs, transparent pricing. Call 205-830-1111 for immediate service."
+      metaDesc: "Birmingham's trusted HVAC repair service. 24/7 emergency response, same-day repairs, transparent pricing. Call 205-835-0111 for immediate service."
     }
   },
   
@@ -88,7 +88,7 @@ export const translations = {
       home: "Inicio",
       services: "Servicios",
       contact: "Contacto",
-      emergency: "Emergencia 24/7: 205-830-1111"
+      emergency: "Emergencia 24/7: 205-835-0111"
     },
     
     // Hero Section
@@ -136,8 +136,8 @@ export const translations = {
         desc: "Sin tarifas ocultas, cotizaciones por adelantado"
       },
       guarantees: {
-        title: "Garantías de Tiempo de Respuesta",
-        desc: "Llegada puntual o servicio gratis"
+        title: "Garantías de Respuesta Rápida",
+        desc: "Llegada rápida o servicio gratis"
       }
     },
     
@@ -155,13 +155,13 @@ export const translations = {
       phone: "Teléfono",
       message: "Mensaje",
       submit: "Enviar Mensaje",
-      callNow: "Llame Ahora: 205-830-1111"
+      callNow: "Llame Ahora: 205-835-0111"
     },
     
     // SEO Content
     seo: {
       metaTitle: "Reparación HVAC de Emergencia 24/7 Birmingham AL | Servicio AC el Mismo Día",
-      metaDesc: "Servicio de reparación HVAC confiable en Birmingham. Respuesta de emergencia 24/7, reparaciones el mismo día, precios transparentes. Llame 205-830-1111."
+      metaDesc: "Servicio de reparación HVAC confiable en Birmingham. Respuesta de emergencia 24/7, reparaciones el mismo día, precios transparentes. Llame 205-835-0111."
     }
   }
 }

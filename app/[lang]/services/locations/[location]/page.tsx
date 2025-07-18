@@ -38,8 +38,8 @@ export async function generateMetadata({
     : `Reparación HVAC ${locationName} AL | Servicio AC de Emergencia 24/7`
     
   const description = params.lang === 'en'
-    ? `Professional HVAC repair service in ${locationName}, Alabama. Same-day repairs, 24/7 emergency service, transparent pricing. Call 205-830-1111.`
-    : `Servicio profesional de reparación HVAC en ${locationName}, Alabama. Reparaciones el mismo día, servicio de emergencia 24/7. Llame 205-830-1111.`
+    ? `Professional HVAC repair service in ${locationName}, Alabama. Same-day repairs, 24/7 emergency service, transparent pricing. Call 205-835-0111.`
+    : `Servicio profesional de reparación HVAC en ${locationName}, Alabama. Reparaciones el mismo día, servicio de emergencia 24/7. Llame 205-835-0111.`
   
   return {
     title,

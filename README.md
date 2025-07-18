@@ -35,6 +35,57 @@ Professional, SEO-optimized HVAC service website for Birmingham, Alabama. Featur
 - HTW 280 Corridor
 - Valleydale
 - Hwy 119
+ TOP 10 AFFLUENT:
+  1. Mountain Brook
+  2. Vestavia Hills
+  3. Hoover
+  4. English Village
+  5. Cahaba Heights
+  6. Pelham
+  7. Helena
+  8. Trussville
+  9. Chelsea
+  10. Alabaster
+
+  MIDDLE 15:
+  11. Irondale
+  12. Springville
+  13. Gardendale
+  14. Fultondale
+  15. Clay
+  16. Pinson
+  17. Center Point
+  18. Warrior
+  19. Bessemer
+  20. Hueytown
+  21. Leeds
+  22. Moody
+  23. Odenville
+  24. Riverside
+  25. Kimberly
+
+  EXTENDED 21:
+  26. Locust Fork
+  27. Blountsville
+  28. Cleveland
+  29. Steele
+  30. Ashville
+  31. Riverchase
+  32. Bessemer West
+  33. Forestdale
+  34. West End
+  35. North Birmingham
+  36. East Birmingham
+  37. Smithfield
+  38. Ensley
+  39. Fairfield
+  40. Wylam
+  41. Tarrant
+  42. Center Point South
+  43. Homewood South
+  44. Homewood West
+  45. Forestdale North
+  46. Eastwood
 
 ## Tech Stack
 
@@ -90,7 +141,7 @@ No environment variables required. All configuration is built into the applicati
 
 ## Contact
 
-Emergency HVAC Service: 205-830-1111
+Emergency HVAC Service: 205-835-0111
 
 ## License
 

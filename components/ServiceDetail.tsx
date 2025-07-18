@@ -82,8 +82,8 @@ export default function ServiceDetail({
                     </h3>
                     <p className="text-slate-600">
                       {lang === 'en' 
-                        ? 'We guarantee response within 2 hours for emergency calls, often arriving much sooner.'
-                        : 'Garantizamos respuesta dentro de 2 horas para llamadas de emergencia, a menudo llegando mucho antes.'}
+                        ? 'We guarantee fast response for emergency calls, with quick arrival times.'
+                        : 'Garantizamos respuesta rápida para llamadas de emergencia, con tiempos de llegada rápidos.'}
                     </p>
                   </div>
                 </div>
@@ -126,10 +126,10 @@ export default function ServiceDetail({
                     ? 'Our emergency team is standing by 24/7'
                     : 'Nuestro equipo de emergencia está disponible 24/7'}
                 </p>
-                <a href="tel:2058301111">
+                <a href="tel:2058350111">
                   <Button size="lg" className="bg-white text-primary hover:bg-white/90 w-full">
                     <Phone className="w-5 h-5 mr-2" />
-                    205-830-1111
+                    205-835-0111
                   </Button>
                 </a>
               </div>

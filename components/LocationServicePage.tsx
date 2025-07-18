@@ -13,7 +13,7 @@ const services = [
   'Emergency Heating Repair Winter',
   'Commercial Emergency HVAC Service',
   'Emergency Service Pricing Transparency',
-  'Emergency Response Time Guarantees'
+  'Fast Emergency Response Guarantees'
 ]
 
 const servicesEs = [
@@ -25,7 +25,7 @@ const servicesEs = [
   'Reparación de Calefacción de Emergencia en Invierno',
   'Servicio HVAC de Emergencia Comercial',
   'Transparencia de Precios de Servicio de Emergencia',
-  'Garantías de Tiempo de Respuesta de Emergencia'
+  'Garantías de Respuesta Rápida de Emergencia'
 ]
 
 export default function LocationServicePage({ 
@@ -61,10 +61,10 @@ export default function LocationServicePage({
               ? `Professional 24/7 Emergency HVAC Service in ${location}`
               : `Servicio HVAC de Emergencia Profesional 24/7 en ${location}`}
           </p>
-          <a href="tel:2058301111">
+          <a href="tel:2058350111">
             <Button size="lg" className="bg-secondary hover:bg-secondary/90 text-lg px-8">
               <Phone className="w-5 h-5 mr-2" />
-              {lang === 'en' ? 'Call Now: 205-830-1111' : 'Llame Ahora: 205-830-1111'}
+              {lang === 'en' ? 'Call Now: 205-835-0111' : 'Llame Ahora: 205-835-0111'}
             </Button>
           </a>
         </div>
@@ -195,10 +195,10 @@ export default function LocationServicePage({
                     ? `Don't wait for a complete breakdown. Regular maintenance can prevent costly repairs and keep your ${location} home comfortable year-round.`
                     : `No espere a una avería completa. El mantenimiento regular puede prevenir reparaciones costosas y mantener su hogar en ${location} cómodo todo el año.`}
                 </p>
-                <a href="tel:2058301111">
+                <a href="tel:2058350111">
                   <Button size="lg" className="w-full sm:w-auto">
                     <Phone className="w-5 h-5 mr-2" />
-                    {lang === 'en' ? 'Call 205-830-1111' : 'Llame 205-830-1111'}
+                    {lang === 'en' ? 'Call 205-835-0111' : 'Llame 205-835-0111'}
                   </Button>
                 </a>
               </div>
