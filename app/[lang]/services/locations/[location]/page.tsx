@@ -9,7 +9,8 @@ const locations = [
   { slug: 'homewood', name: 'Homewood' },
   { slug: 'mountain-brook', name: 'Mountain Brook' },
   { slug: 'river-chase', name: 'River Chase' },
-  { slug: 'htw-280-corridor', name: 'HTW 280 Corridor' },
+  { slug: 'htw-280-corridor', name: 'HWY 280 Corridor' },
+  { slug: 'hwy-280-corridor', name: 'HWY 280 Corridor' },
   { slug: 'valleydale', name: 'Valleydale' },
   { slug: 'hwy-119', name: 'Hwy 119' }
 ]
@@ -34,12 +35,12 @@ export async function generateMetadata({
   const locationName = locationData?.name || params.location
   
   const title = params.lang === 'en' 
-    ? `HVAC Repair ${locationName} AL | 24/7 Emergency AC Service`
-    : `Reparación HVAC ${locationName} AL | Servicio AC de Emergencia 24/7`
+    ? `Emergency HVAC Repair ${locationName} AL | Birmingham AC & Heating Contractors`
+    : `Reparación HVAC de Emergencia ${locationName} AL | Contratistas AC y Calefacción Birmingham`
     
   const description = params.lang === 'en'
-    ? `Professional HVAC repair service in ${locationName}, Alabama. Same-day repairs, 24/7 emergency service, transparent pricing. Call 205-835-0111.`
-    : `Servicio profesional de reparación HVAC en ${locationName}, Alabama. Reparaciones el mismo día, servicio de emergencia 24/7. Llame 205-835-0111.`
+    ? `Emergency HVAC repair in ${locationName}, Alabama. Licensed Birmingham contractors provide same-day AC & heating service, 24/7 emergency repairs. Call 205-835-0111 for immediate service.`
+    : `Reparación HVAC de emergencia en ${locationName}, Alabama. Contratistas licenciados de Birmingham proporcionan servicio AC y calefacción el mismo día, reparaciones de emergencia 24/7. Llame 205-835-0111 para servicio inmediato.`
   
   return {
     title,
