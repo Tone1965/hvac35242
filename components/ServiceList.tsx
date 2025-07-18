@@ -11,13 +11,13 @@ const services = [
   { 
     icon: Clock, 
     key: 'sameDayRepair',
-    image: '/images/ac-repair.jpg',
+    image: '/images/new-same-day-card-v2.png',
     slug: 'same-day-hvac-repair'
   },
   { 
     icon: Shield, 
     key: 'weekendService',
-    image: '/images/hvac-tech.jpg',
+    image: '/images/weekend-emergency.jpg',
     slug: 'weekend-emergency-service'
   },
   { 
@@ -29,7 +29,7 @@ const services = [
   { 
     icon: Timer, 
     key: 'nightCalls',
-    image: '/images/ac-unit.jpg',
+    image: '/images/night-emergency.jpg',
     slug: 'night-emergency-hvac'
   },
   { 
@@ -47,13 +47,13 @@ const services = [
   { 
     icon: Building2, 
     key: 'commercial',
-    image: '/images/ac-unit.jpg',
+    image: '/images/commercial-emergency.jpg',
     slug: 'commercial-emergency-hvac'
   },
   { 
     icon: DollarSign, 
     key: 'pricing',
-    image: '/images/emergency-service.jpg',
+    image: '/images/pricing-transparency.jpg',
     slug: 'emergency-pricing-transparency'
   },
   { 

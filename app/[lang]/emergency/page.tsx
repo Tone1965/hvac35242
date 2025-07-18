@@ -1,3 +1,4 @@
+import Header from "@/components/Header"
 "use client"
 
 import { useState, useEffect } from "react"

@@ -18,8 +18,8 @@ export const translations = {
     
     // Services
     services: {
-      title: "Our Services",
-      subtitle: "Professional HVAC Solutions for Birmingham & Surrounding Areas",
+      title: "Emergency HVAC Services Near You - Birmingham & Surrounding Areas",
+      subtitle: "24/7 AC Repair, Heating Installation & Emergency HVAC Solutions for Birmingham, Vestavia Hills, Mountain Brook, Hoover & All Metro Areas",
       sameDayRepair: {
         title: "Same-Day HVAC Repair",
         desc: "Fast, reliable repairs when you need them most"

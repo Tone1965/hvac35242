@@ -87,7 +87,7 @@ export default function MountainBrookEmergencyHVACPage({
         </div>
       </section>
 
-      <main className="max-w-6xl mx-auto px-4 py-12">
+      <main className="max-w-6xl mx-auto px-4 py-12 bg-gradient-to-br from-slate-100 via-blue-100 to-red-100">
         
         {/* Problem Section */}
         <section className="mb-16">

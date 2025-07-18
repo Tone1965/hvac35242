@@ -22,6 +22,10 @@ export function middleware(request: NextRequest) {
   if (pathname.startsWith('/.well-known/acme-challenge/')) {
     return NextResponse.next()
   }
+  // Skip middleware for static assets (images, etc.)
+  if (pathname.startsWith("/images/") || pathname.startsWith("/favicon.ico")) {
+    return NextResponse.next()
+  }
   
   // Check if the pathname is missing a locale
   const pathnameIsMissingLocale = locales.every(
