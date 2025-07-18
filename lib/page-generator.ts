@@ -158,8 +158,8 @@ export function generatePageData(keyword: ServiceKeyword): PageData {
     : `${serviceDisplay} ${locationDisplay} Alabama | Licensed & Insured | Free Quotes`
   
   const metaDescription = isEmergency
-    ? `Emergency ${serviceDisplay.toLowerCase()} in ${locationDisplay}! Available 24/7. Licensed technicians. Call (205) 830-1111 for immediate service.`
-    : `Professional ${serviceDisplay.toLowerCase()} in ${locationDisplay}, Alabama. Licensed, insured, and experienced. Free estimates. Call (205) 830-1111 today!`
+    ? `Emergency ${serviceDisplay.toLowerCase()} in ${locationDisplay}! Available 24/7. Licensed technicians. Call (205) 835-0111 for immediate service.`
+    : `Professional ${serviceDisplay.toLowerCase()} in ${locationDisplay}, Alabama. Licensed, insured, and experienced. Free estimates. Call (205) 835-0111 today!`
   
   const h1 = isEmergency
     ? `Emergency ${serviceDisplay} in ${locationDisplay}, Alabama`
@@ -184,7 +184,7 @@ export function generatePageData(keyword: ServiceKeyword): PageData {
         ? `Available 24/7 • Same Day Service • Licensed Technicians`
         : `Licensed & Insured • Free Estimates • 100% Satisfaction Guarantee`,
       cta: 'Get Free Quote',
-      emergencyCta: 'Call Now: (205) 830-1111'
+      emergencyCta: 'Call Now: (205) 835-0111'
     },
     content,
     schema
@@ -277,7 +277,7 @@ function generateFAQ(serviceDisplay: string, locationDisplay: string, zipCode?: 
     },
     {
       question: `Do you offer emergency ${serviceDisplay.toLowerCase()} in ${locationDisplay}?`,
-      answer: `Yes! We provide 24/7 emergency ${serviceDisplay.toLowerCase()} throughout ${locationDisplay} and surrounding areas. Call (205) 830-1111 for immediate assistance.`
+      answer: `Yes! We provide 24/7 emergency ${serviceDisplay.toLowerCase()} throughout ${locationDisplay} and surrounding areas. Call (205) 835-0111 for immediate assistance.`
     },
     {
       question: `Are you licensed for ${serviceDisplay.toLowerCase()} in Alabama?`,
@@ -300,7 +300,7 @@ function generateLocalBusinessSchema(keyword: ServiceKeyword, location: any, ser
     "@id": `https://www.hvac35242.com${keyword.service}-${keyword.location}`,
     "name": `Birmingham HVAC ${serviceDisplay} - ${locationDisplay}`,
     "url": `https://www.hvac35242.com/${keyword.service}-${keyword.location}`,
-    "telephone": "(205) 830-1111",
+    "telephone": "(205) 835-0111",
     "email": "service@hvac35242.com",
     "address": {
       "@type": "PostalAddress",
@@ -469,7 +469,7 @@ export default function ServicePage() {
                 <Button size="lg" className="bg-white text-primary hover:bg-gray-100">
                   ${pageData.hero.cta}
                 </Button>
-                <a href="tel:2058301111">
+                <a href="tel:2058350111">
                   <Button size="lg" variant="destructive">
                     <Phone className="w-5 h-5 mr-2" />
                     ${pageData.hero.emergencyCta}
@@ -558,10 +558,10 @@ export default function ServicePage() {
           <div className="container mx-auto px-4 text-center">
             <h2 className="text-4xl font-bold mb-6">Ready to Get Started?</h2>
             <p className="text-xl mb-8">Contact us today for fast, professional service!</p>
-            <a href="tel:2058301111">
+            <a href="tel:2058350111">
               <Button size="lg" className="bg-white text-primary hover:bg-gray-100 text-lg px-8">
                 <Phone className="w-5 h-5 mr-2" />
-                Call Now: (205) 830-1111
+                Call Now: (205) 835-0111
               </Button>
             </a>
           </div>

@@ -63,7 +63,7 @@ export default function HomePage({ params }: { params: { lang: 'en' | 'es' } }) 
                 {t.hero.cta}
               </Button>
             </Link>
-            <a href="tel:2058301111">
+            <a href="tel:2058350111">
               <Button size="lg" variant="destructive" className="text-lg px-8">
                 <Phone className="w-5 h-5 mr-2" />
                 {t.hero.emergency}
@@ -173,10 +173,10 @@ export default function HomePage({ params }: { params: { lang: 'en' | 'es' } }) 
               ? 'Available 24/7 for all your heating and cooling emergencies'
               : 'Disponible 24/7 para todas sus emergencias de calefacción y refrigeración'}
           </p>
-          <a href="tel:2058301111">
+          <a href="tel:2058350111">
             <Button size="lg" className="bg-white text-primary hover:bg-white/90 text-lg px-8">
               <Phone className="w-5 h-5 mr-2" />
-              {params.lang === 'en' ? 'Call Now: 205-830-1111' : 'Llame Ahora: 205-830-1111'}
+              {params.lang === 'en' ? 'Call Now: 205-835-0111' : 'Llame Ahora: 205-835-0111'}
             </Button>
           </a>
         </div>
