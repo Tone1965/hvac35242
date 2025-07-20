@@ -22,8 +22,9 @@ export function middleware(request: NextRequest) {
   if (pathname.startsWith('/.well-known/acme-challenge/')) {
     return NextResponse.next()
   }
+  
   // Skip middleware for static assets (images, etc.)
-  if (pathname.startsWith("/images/") || pathname.startsWith("/favicon.ico")) {
+  if (pathname.startsWith('/images/') || pathname.startsWith('/favicon.ico')) {
     return NextResponse.next()
   }
   

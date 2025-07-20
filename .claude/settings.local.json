@@ -2,7 +2,27 @@
   "permissions": {
     "allow": [
       "Bash(ssh:*)",
-      "Bash(chmod:*)"
+      "Bash(chmod:*)",
+      "Bash(ssh root@142.93.194.81 \"docker logs --tail 10 birmingham-hvac-live\")",
+      "Bash(curl:*)",
+      "Bash(nslookup:*)",
+      "Bash(dig:*)",
+      "Bash(scp:*)",
+      "Bash(git init:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(ssh root@142.93.194.81 \"cd /root/birmingham-hvac && ls -la | grep package\")",
+      "Bash(ls:*)",
+      "WebFetch(domain:dev.hvac35242.com)",
+      "WebFetch(domain:servicetechhvac.com)",
+      "Bash(mkdir:*)",
+      "Bash(rm:*)",
+      "Bash(echo)",
+      "Bash(git push:*)",
+      "Bash(node:*)",
+      "Bash(find:*)",
+      "Bash(grep:*)",
+      "Bash(__NEW_LINE__ echo \"\")"
     ],
     "deny": []
   }

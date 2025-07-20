@@ -1,5 +1,4 @@
 "use client"
-import Header from "@/components/Header"
 
 import { useState, useEffect } from "react"
 import { Button } from "@/components/ui/button"
@@ -38,7 +37,6 @@ export default function EmergencyPage({ params }: { params: { lang: "en" | "es" 
   return (
     <div>
       {/* Emergency Header - Eugene Schwartz Style */}
-      <Header lang={params.lang} variant="emergency" />
       <section className="bg-red-600 text-white py-8">
         <div className="container mx-auto px-4 text-center">
           <div className="animate-pulse text-xl font-bold mb-2">🚨 BIRMINGHAM HVAC EMERGENCY ALERT 🚨</div>
@@ -102,7 +100,7 @@ export default function EmergencyPage({ params }: { params: { lang: "en" | "es" 
       </section>
 
       {/* Response Process */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-gradient-to-br from-slate-100 via-blue-100 to-red-100">
         <div className="container mx-auto px-4">
           <h2 className="text-4xl font-bold text-center mb-12">Our 4-Step Emergency Response Process</h2>
           <div className="grid md:grid-cols-4 gap-8">
@@ -172,7 +170,7 @@ export default function EmergencyPage({ params }: { params: { lang: "en" | "es" 
       </section>
 
       {/* Service Info */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-gradient-to-br from-slate-100 via-blue-100 to-red-100">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-4xl font-bold mb-8">Emergency Service Information</h2>
           <div className="max-w-3xl mx-auto">

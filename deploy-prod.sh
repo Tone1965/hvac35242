@@ -13,6 +13,20 @@ if [ ! -f "docker-compose.prod.yml" ]; then
     exit 1
 fi
 
+# Create timestamp for rollback tagging
+TIMESTAMP=$(date +%Y%m%d_%H%M%S)
+ROLLBACK_TAG="rollback_${TIMESTAMP}"
+
+# Tag current production image for rollback
+echo "📦 Tagging current production image for rollback..."
+CURRENT_IMAGE=$(docker images -q birmingham-hvac-hvac-prod:latest 2>/dev/null)
+if [ ! -z "$CURRENT_IMAGE" ]; then
+    docker tag $CURRENT_IMAGE birmingham-hvac-hvac-prod:$ROLLBACK_TAG
+    echo "✅ Current image tagged as: $ROLLBACK_TAG"
+else
+    echo "ℹ️  No existing production image found"
+fi
+
 # Confirmation prompt
 read -p "⚠️  Are you sure you want to deploy to PRODUCTION? (y/N): " -n 1 -r
 echo
@@ -57,3 +71,5 @@ echo "✅ Production deployment complete!"
 echo "🌐 Site should be available at: https://www.hvac35242.com"
 echo "🔍 Check logs with: docker logs hvac-prod -f"
 echo "📊 Check status with: docker ps"
+echo "🔄 Rollback available with: ./rollback-prod.sh $ROLLBACK_TAG"
+echo "📝 Rollback tag: $ROLLBACK_TAG"

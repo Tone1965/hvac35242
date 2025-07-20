@@ -20,7 +20,21 @@ cd /root/birmingham-hvac
 
 ### 4. Deploy Production Site (After Dev Verification)
 ```bash
+# Standard deployment
 ./deploy-prod.sh
+
+# Zero-downtime deployment (recommended)
+./deploy-zero-downtime.sh
+```
+
+### 5. Verify Deployment
+```bash
+./verify-deployment.sh
+```
+
+### 6. Rollback (If Needed)
+```bash
+./rollback-prod.sh [rollback_tag]
 ```
 
 ## Port Configuration (FIXED)
