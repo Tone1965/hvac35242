@@ -7,7 +7,7 @@ const locations = [
   'Homewood',
   'Mountain Brook',
   'River Chase',
-  'HTW 280 Corridor',
+  'HWY 280 Corridor',
   'Valleydale',
   'Hwy 119'
 ]

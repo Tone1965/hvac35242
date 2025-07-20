@@ -1,5 +1,5 @@
-import Header from "@/components/Header"
 "use client"
+import Header from "@/components/Header"
 
 import { useState, useEffect } from "react"
 import { Button } from "@/components/ui/button"
@@ -38,6 +38,7 @@ export default function EmergencyPage({ params }: { params: { lang: "en" | "es" 
   return (
     <div>
       {/* Emergency Header - Eugene Schwartz Style */}
+      <Header lang={params.lang} variant="emergency" />
       <section className="bg-red-600 text-white py-8">
         <div className="container mx-auto px-4 text-center">
           <div className="animate-pulse text-xl font-bold mb-2">🚨 BIRMINGHAM HVAC EMERGENCY ALERT 🚨</div>

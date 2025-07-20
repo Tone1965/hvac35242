@@ -52,6 +52,7 @@ module.exports = {
         'slide-up': 'slideUp 1s ease-out 0.3s both',
         'bounce-in': 'bounceIn 1s ease-out 0.6s both',
         'emergency-pulse': 'emergencyPulse 2s infinite',
+        'phone-ring': 'phone-ring 2s ease-in-out infinite',
       },
       keyframes: {
         fadeIn: {
@@ -69,6 +70,11 @@ module.exports = {
         emergencyPulse: {
           '0%, 100%': { transform: 'scale(1)', boxShadow: '0 0 0 0 rgba(239, 68, 68, 0.7)' },
           '50%': { transform: 'scale(1.05)', boxShadow: '0 0 0 10px rgba(239, 68, 68, 0)' },
+        },
+        'phone-ring': {
+          '0%, 100%': { transform: 'rotate(0deg)' },
+          '10%, 30%, 50%, 70%, 90%': { transform: 'rotate(-10deg)' },
+          '20%, 40%, 60%, 80%': { transform: 'rotate(10deg)' },
         },
       },
     },

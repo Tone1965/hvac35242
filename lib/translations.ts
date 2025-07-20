@@ -21,40 +21,40 @@ export const translations = {
       title: "Emergency HVAC Services Near You - Birmingham & Surrounding Areas",
       subtitle: "24/7 AC Repair, Heating Installation & Emergency HVAC Solutions for Birmingham, Vestavia Hills, Mountain Brook, Hoover & All Metro Areas",
       sameDayRepair: {
-        title: "Same-Day HVAC Repair",
-        desc: "Fast, reliable repairs when you need them most"
+        title: "Same-Day HVAC Repair Birmingham AL - Emergency AC & Heating Service",
+        desc: "Fast, reliable same-day HVAC repairs in Birmingham, Alabama. Licensed technicians available 24/7 for emergency AC and heating service."
       },
       weekendService: {
-        title: "Weekend Emergency Service",
-        desc: "Available 7 days a week for your convenience"
+        title: "Weekend Emergency HVAC Service Birmingham - 24/7 AC & Heating Repair",
+        desc: "Weekend emergency HVAC service in Birmingham, AL. Professional AC and heating repairs available Saturdays and Sundays."
       },
       holidayResponse: {
-        title: "Holiday Emergency Response",
-        desc: "We're here when others aren't"
+        title: "Holiday Emergency HVAC Service Birmingham AL - Christmas, New Year & Holiday Repairs",
+        desc: "Holiday emergency HVAC service in Birmingham, Alabama. We're available Christmas, New Year's, and all major holidays for AC and heating repairs."
       },
       nightCalls: {
-        title: "Night Emergency Calls",
-        desc: "24-hour service for urgent repairs"
+        title: "24/7 Night Emergency HVAC Service Birmingham AL - After Hours AC & Heating",
+        desc: "Night emergency HVAC service in Birmingham, Alabama. Professional after-hours AC and heating repairs available around the clock."
       },
       acHeatwave: {
-        title: "Emergency AC During Heatwaves",
-        desc: "Priority service during extreme heat"
+        title: "Emergency AC Repair During Heatwaves Birmingham AL - Beat the Alabama Heat",
+        desc: "Emergency AC repair during Alabama heatwaves. Fast, professional air conditioning service when temperatures soar in Birmingham."
       },
       heatingWinter: {
-        title: "Emergency Heating Winter",
-        desc: "Stay warm with rapid heating repairs"
+        title: "Emergency Heating Repair Birmingham AL - Winter Furnace & Heat Pump Service",
+        desc: "Emergency heating repair in Birmingham, Alabama. Professional furnace and heat pump service during cold winter months."
       },
       commercial: {
-        title: "Commercial Emergency Service",
-        desc: "Minimize downtime for your business"
+        title: "Commercial Emergency HVAC Service Birmingham AL - Business AC & Heating",
+        desc: "Commercial emergency HVAC service in Birmingham, Alabama. Professional business AC and heating repairs for offices, retail, and industrial facilities."
       },
       pricing: {
-        title: "Transparent Pricing",
-        desc: "No hidden fees, upfront quotes"
+        title: "Transparent Emergency HVAC Pricing Birmingham AL - No Hidden Fees",
+        desc: "Transparent emergency HVAC pricing in Birmingham, Alabama. Clear, upfront pricing with no hidden fees for all AC and heating services."
       },
       guarantees: {
-        title: "Fast Response Guarantees",
-        desc: "Quick arrival or service is free"
+        title: "Fast Emergency HVAC Response Birmingham AL - Guaranteed Service Times",
+        desc: "Fast emergency HVAC response in Birmingham, Alabama. Guaranteed response times for AC and heating emergencies with licensed technicians."
       }
     },
     

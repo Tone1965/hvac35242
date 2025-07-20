@@ -32,7 +32,7 @@ Professional, SEO-optimized HVAC service website for Birmingham, Alabama. Featur
 - Homewood
 - Mountain Brook
 - River Chase
-- HTW 280 Corridor
+- HWY 280 Corridor
 - Valleydale
 - Hwy 119
  TOP 10 AFFLUENT:

@@ -36,7 +36,7 @@ export default function BirminghamACRepairPageComponent({ lang }: { lang: 'en' |
   const problem = problemSection[lang]
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-red-50">
+    <div className="min-h-screen bg-gradient-to-br from-slate-100 via-gray-100 to-slate-200">
       {/* Hero Section */}
       <section className="relative h-[500px] flex items-center justify-center overflow-hidden">
         <Image
@@ -104,7 +104,7 @@ export default function BirminghamACRepairPageComponent({ lang }: { lang: 'en' |
             
             {/* Problem Section */}
             <div className="mb-20">
-              <div className="bg-white rounded-3xl shadow-2xl overflow-hidden border-l-8 border-red-500">
+              <div className="bg-white/95 backdrop-blur-sm rounded-3xl shadow-2xl overflow-hidden border-l-8 border-red-500 border border-gray-200/50">
                 <div className="p-12">
                   <div className="flex items-start">
                     <div className="bg-red-100 p-4 rounded-full mr-6 flex-shrink-0">

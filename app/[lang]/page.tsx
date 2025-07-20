@@ -70,10 +70,10 @@ export default function HomePage({ params }: { params: { lang: 'en' | 'es' } }) 
                 BIRMINGHAM'S
               </span>
               <span className="block text-transparent bg-clip-text bg-gradient-to-r from-red-400 via-orange-400 to-yellow-400 drop-shadow-2xl">
-                #1 EMERGENCY
+                EMERGENCY
               </span>
               <span className="block text-cyan-300 drop-shadow-2xl">
-                HVAC
+                HVAC EXPERTS
               </span>
             </h1>
           </div>
@@ -173,7 +173,7 @@ export default function HomePage({ params }: { params: { lang: 'en' | 'es' } }) 
       </section>
       
       {/* Services Section */}
-      <section className="py-16 bg-slate-50">
+      <section className="py-16 bg-gradient-to-br from-slate-100 via-gray-100 to-slate-200">
         <div className="container mx-auto px-4">
           <h2 className="text-5xl md:text-6xl font-black text-center mb-4 text-gray-900">
             EMERGENCY HVAC SERVICES
@@ -189,7 +189,7 @@ export default function HomePage({ params }: { params: { lang: 'en' | 'es' } }) 
                 return (
                   <div 
                     key={key}
-                    className="bg-white p-8 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 border-2 border-slate-200 hover:border-red-300 transform hover:scale-105"
+                    className="bg-white/95 backdrop-blur-sm p-8 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 border-2 border-gray-300 hover:border-red-400 transform hover:scale-105"
                   >
                     <Icon className="w-16 h-16 text-red-600 mb-6" />
                     <h3 className="text-2xl font-bold mb-4 text-gray-900">
@@ -230,7 +230,7 @@ export default function HomePage({ params }: { params: { lang: 'en' | 'es' } }) 
               HVAC EMERGENCY?
             </h2>
             <p className="text-2xl md:text-3xl mb-8 text-yellow-200 font-semibold">
-              DON'T WAIT - CALL BIRMINGHAM'S #1 EMERGENCY HVAC EXPERTS
+              DON'T WAIT - CALL BIRMINGHAM'S EMERGENCY HVAC EXPERTS
             </p>
             <p className="text-xl mb-12 opacity-90">
               Available 24/7 for all your heating and cooling emergencies across Birmingham Metro

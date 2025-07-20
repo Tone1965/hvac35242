@@ -73,9 +73,35 @@ export async function generateMetadata({
   const service = t.services[serviceInfo.key as keyof typeof t.services];
   const serviceName = typeof service === 'object' && service.title ? service.title : serviceInfo.key;
   
+  // Create SEO-optimized metadata for each service
+  const seoTitles: { [key: string]: string } = {
+    'same-day-hvac-repair': 'Same-Day HVAC Repair Birmingham AL | Emergency AC & Heating Service',
+    'weekend-emergency-service': 'Weekend Emergency HVAC Service Birmingham | 24/7 AC & Heating Repair',
+    'holiday-hvac-emergency': 'Holiday Emergency HVAC Service Birmingham AL | Christmas & Holiday Repairs',
+    'night-emergency-hvac': '24/7 Night Emergency HVAC Service Birmingham AL | After Hours AC Repair',
+    'emergency-ac-heatwave': 'Emergency AC Repair During Heatwaves Birmingham AL | Beat Alabama Heat',
+    'emergency-heating-winter': 'Emergency Heating Repair Birmingham AL | Winter Furnace & Heat Pump Service',
+    'commercial-emergency-hvac': 'Commercial Emergency HVAC Service Birmingham AL | Business AC & Heating',
+    'emergency-pricing-transparency': 'Transparent Emergency HVAC Pricing Birmingham AL | No Hidden Fees',
+    'response-time-guarantees': 'Fast Emergency HVAC Response Birmingham AL | Guaranteed Service Times'
+  }
+  
+  const seoDescriptions: { [key: string]: string } = {
+    'same-day-hvac-repair': 'Same-day HVAC repair in Birmingham, Alabama. Emergency AC and heating service with licensed technicians. Call 205-835-0111 for immediate service.',
+    'weekend-emergency-service': 'Weekend emergency HVAC service in Birmingham, AL. Professional AC and heating repairs available Saturdays and Sundays. Call 205-835-0111.',
+    'holiday-hvac-emergency': 'Holiday emergency HVAC service in Birmingham, Alabama. Available Christmas, New Year\'s, and all major holidays. Call 205-835-0111.',
+    'night-emergency-hvac': 'Night emergency HVAC service in Birmingham, AL. Professional after-hours AC and heating repairs available 24/7. Call 205-835-0111.',
+    'emergency-ac-heatwave': 'Emergency AC repair during Alabama heatwaves in Birmingham. Fast air conditioning service when temperatures soar. Call 205-835-0111.',
+    'emergency-heating-winter': 'Emergency heating repair in Birmingham, Alabama. Professional furnace and heat pump service during winter. Call 205-835-0111.',
+    'commercial-emergency-hvac': 'Commercial emergency HVAC service in Birmingham, AL. Business AC and heating repairs for offices and facilities. Call 205-835-0111.',
+    'emergency-pricing-transparency': 'Transparent emergency HVAC pricing in Birmingham, Alabama. Clear, upfront pricing with no hidden fees. Call 205-835-0111.',
+    'response-time-guarantees': 'Fast emergency HVAC response in Birmingham, AL. Guaranteed response times for AC and heating emergencies. Call 205-835-0111.'
+  }
+
   return {
-    title: `${serviceName} | Birmingham HVAC`,
-    description: `Professional ${serviceName} services in Birmingham, AL. 24/7 emergency response, licensed technicians, transparent pricing. Call 205-835-0111.`,
+    title: seoTitles[params.service] || `${serviceName} | Birmingham HVAC`,
+    description: seoDescriptions[params.service] || `Professional ${serviceName} services in Birmingham, AL. 24/7 emergency response, licensed technicians, transparent pricing. Call 205-835-0111.`,
+    keywords: `emergency HVAC repair Birmingham, AC repair Birmingham Alabama, heating repair Birmingham, HVAC service Birmingham, ${params.service} Birmingham`,
     alternates: {
       languages: {
         'en': `/en/services/${params.service}`,

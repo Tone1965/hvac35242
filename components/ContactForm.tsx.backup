@@ -22,34 +22,20 @@ export default function ContactForm({ lang }: { lang: 'en' | 'es' }) {
     e.preventDefault()
     setIsSubmitting(true)
     
-    try {
-      const response = await fetch('/api/contact', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(formData),
-      })
-      
-      if (response.ok) {
-        // Reset form
-        setFormData({ name: '', email: '', phone: '', message: '' })
-        
-        // Show success message
-        alert(lang === 'en' 
-          ? 'Thank you! Your message has been sent. We will contact you shortly.'
-          : '¡Gracias! Su mensaje ha sido enviado. Le contactaremos pronto.')
-      } else {
-        throw new Error('Failed to send email')
-      }
-    } catch (error) {
-      console.error('Email error:', error)
-      alert(lang === 'en' 
-        ? 'Sorry, there was an error sending your message. Please call 205-835-0111.'
-        : 'Lo sentimos, hubo un error enviando su mensaje. Por favor llame 205-835-0111.')
-    } finally {
-      setIsSubmitting(false)
-    }
+    // Simulate form submission
+    await new Promise(resolve => setTimeout(resolve, 2000))
+    
+    // In production, you would send this to your API
+    console.log('Form submitted:', formData)
+    
+    // Reset form
+    setFormData({ name: '', email: '', phone: '', message: '' })
+    setIsSubmitting(false)
+    
+    // Show success message
+    alert(lang === 'en' 
+      ? 'Thank you! We will contact you shortly.'
+      : '¡Gracias! Le contactaremos pronto.')
   }
   
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {

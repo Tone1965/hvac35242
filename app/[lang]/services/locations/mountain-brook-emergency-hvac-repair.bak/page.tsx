@@ -1,3 +1,4 @@
+import Header from "@/components/Header"
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
@@ -6,6 +7,7 @@ export const metadata: Metadata = {
 }
 
 export default function MountainBrookEmergencyHVACPage() {
+    <Header lang="en" variant="location" locationName="Mountain Brook" />
   return (
     <div className="max-w-4xl mx-auto px-4 py-8">
       <h1 className="text-4xl font-bold text-primary mb-8">Emergency Hvac Repair in Mountain Brook</h1>

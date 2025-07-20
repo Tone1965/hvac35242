@@ -4,6 +4,7 @@ import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { Button } from './ui/button'
 import { translations } from '@/lib/translations'
+import { getTranslatedRoute } from '@/lib/route-mappings'
 import { Phone, Clock, Shield, Award } from 'lucide-react'
 
 interface HeaderProps {
@@ -25,7 +26,8 @@ export default function Header({
   const t = translations[lang]
   
   const switchLang = lang === 'en' ? 'es' : 'en'
-  const newPath = pathname.replace(`/${lang}`, `/${switchLang}`)
+  // Simple replacement that works for all URL patterns
+  const newPath = pathname.replace(new RegExp(`^/${lang}(/|$)`), `/${switchLang}$1`)
   
   // Emergency Header Variant
   if (variant === 'emergency') {
@@ -66,6 +68,12 @@ export default function Header({
                   </div>
                   <div className="text-sm text-gray-600">24/7 Emergency Service</div>
                 </div>
+                
+                <Link href={newPath}>
+                  <Button variant="outline" size="sm">
+                    {lang === 'en' ? 'ES' : 'EN'}
+                  </Button>
+                </Link>
                 
                 <Button 
                   asChild 
@@ -138,6 +146,12 @@ export default function Header({
                   24/7 Emergency: (205) 835-0111
                 </div>
                 
+                <Link href={newPath}>
+                  <Button variant="outline" size="sm">
+                    {lang === 'en' ? 'ES' : 'EN'}
+                  </Button>
+                </Link>
+                
                 <Button asChild variant="outline" className="border-primary text-primary hover:bg-primary hover:text-white">
                   <Link href={`/${lang}/quote`}>Get Quote</Link>
                 </Button>
@@ -201,6 +215,12 @@ export default function Header({
                   <Phone className="w-4 h-4 mr-1" />
                   (205) 835-0111
                 </div>
+                
+                <Link href={newPath}>
+                  <Button variant="outline" size="sm">
+                    {lang === 'en' ? 'ES' : 'EN'}
+                  </Button>
+                </Link>
                 
                 <Button asChild className="bg-gradient-to-r from-green-600 to-blue-600 hover:from-green-700 hover:to-blue-700 text-white">
                   <Link href={`tel:2058350111`}>Call Now</Link>

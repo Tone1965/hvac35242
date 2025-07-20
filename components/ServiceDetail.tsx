@@ -10,10 +10,24 @@ const locations = [
   'Homewood',
   'Mountain Brook',
   'River Chase',
-  'HTW 280 Corridor',
+  'HWY 280 Corridor',
   'Valleydale',
   'Hwy 119'
 ]
+
+// Function to convert location names to proper URL slugs
+const getLocationSlug = (location: string) => {
+  // Handle special cases for consistent URL generation
+  const specialCases: { [key: string]: string } = {
+    'HWY 280 Corridor': 'hwy-280-corridor',
+    'HTW 280 Corridor': 'hwy-280-corridor', // Handle legacy references
+    'River Chase': 'river-chase',
+    'Mountain Brook': 'mountain-brook',
+    'Hwy 119': 'hwy-119'
+  }
+  
+  return specialCases[location] || location.toLowerCase().replace(/\s+/g, '-')
+}
 
 export default function ServiceDetail({ 
   lang, 
@@ -51,7 +65,7 @@ export default function ServiceDetail({
       </section>
       
       {/* Service Details */}
-      <section className="py-16">
+      <section className="py-16 bg-gradient-to-br from-slate-100 via-blue-100 to-red-100">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             <div>
@@ -149,7 +163,7 @@ export default function ServiceDetail({
                 {locations.map((location) => (
                   <Link
                     key={location}
-                    href={`/${lang}/services/locations/${location.toLowerCase().replace(/\s+/g, '-')}`}
+                    href={`/${lang}/services/locations/${getLocationSlug(location)}`}
                     className="bg-slate-100 hover:bg-slate-200 p-3 rounded-lg text-center transition-colors"
                   >
                     {location}
