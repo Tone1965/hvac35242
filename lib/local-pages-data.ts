@@ -82,14 +82,78 @@ export const birminghamMetroAreas = [
     slug: 'homewood',
     zipCodes: ['35209', '35229'],
     landmarks: ['Homewood City Hall', 'Vulcan Park', 'Samford University'],
-    description: 'historic downtown area with tree-lined streets and close-knit community'
+    description: 'historic downtown area with tree-lined streets and close-knit community',
+    demographics: {
+      medianIncome: 75000,
+      homeAge: 'mixed_vintage',
+      familyType: 'established_families'
+    },
+    hvacChallenges: [
+      'Older homes with outdated ductwork',
+      'Tree coverage affecting outdoor units', 
+      'Historic home preservation requirements',
+      'University rental properties with deferred maintenance'
+    ],
+    psychologyProfile: 'quality_conscious',
+    averageHVACSpend: 4500,
+    emergencyRate: 'high',
+    uniqueFactors: [
+      'Historic homes with original hardwood floors requiring precise temperature control',
+      'Tree-lined streets creating shade patterns that affect HVAC load calculations',
+      'Proximity to Samford University creating seasonal demand fluctuations',
+      'Underground utilities requiring specialized installation techniques'
+    ],
+    climateChallenges: [
+      'Dense tree canopy blocking airflow to outdoor units',
+      'Historic home construction with limited attic access',
+      'Vintage ductwork systems needing modern integration',
+      'Steep terrain affecting drainage and unit placement'
+    ],
+    demographicInsights: [
+      'Professional families prioritizing indoor air quality',
+      'Homeowners investing in property value preservation',
+      'Multi-generational residents with varying comfort needs',
+      'University staff seeking reliable year-round climate control'
+    ]
   },
   {
     name: 'River Chase',
     slug: 'river-chase',
     zipCodes: ['35244'],
     landmarks: ['Riverchase Country Club', 'The Preserve', 'Hoover Metropolitan Stadium'],
-    description: 'upscale residential community with golf courses and family amenities'
+    description: 'upscale residential community with golf courses and family amenities',
+    demographics: {
+      medianIncome: 85000,
+      homeAge: 'modern_construction',
+      familyType: 'affluent_families'
+    },
+    hvacChallenges: [
+      'Large homes with complex zoning requirements',
+      'Golf course irrigation affecting humidity levels',
+      'Premium home automation integration needs',
+      'Noise restrictions for outdoor equipment'
+    ],
+    psychologyProfile: 'luxury_focused',
+    averageHVACSpend: 6500,
+    emergencyRate: 'medium',
+    uniqueFactors: [
+      'Luxury homes with multiple HVAC zones requiring sophisticated controls',
+      'Country club proximity demanding quiet operation systems',
+      'Premium finishes requiring specialized installation care',
+      'Hoover Stadium events creating seasonal traffic and service timing needs'
+    ],
+    climateChallenges: [
+      'Large open floor plans requiring powerful systems',
+      'High ceilings increasing heating and cooling loads',
+      'Premium windows and insulation affecting system sizing',
+      'Outdoor entertainment areas needing climate extension'
+    ],
+    demographicInsights: [
+      'Executives expecting premium service and rapid response',
+      'Families with home offices requiring precise temperature control',
+      'Retirees prioritizing comfort and energy efficiency',
+      'Country club members valuing discretion and quality workmanship'
+    ]
   },
   {
     name: 'HWY 280 Corridor',

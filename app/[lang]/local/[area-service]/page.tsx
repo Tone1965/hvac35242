@@ -1,5 +1,5 @@
 import { Metadata } from 'next'
-import LocalPage from '@/components/LocalPage'
+import RevenueLocalPage from '@/components/RevenueLocalPage'
 import { birminghamMetroAreas, localServices, getLocalPageData } from '@/lib/local-pages-data'
 
 export async function generateStaticParams() {
@@ -140,7 +140,7 @@ export default function LocalServicePage({
   }
   
   return (
-    <LocalPage 
+    <RevenueLocalPage 
       area={pageData.area}
       service={pageData.service}
       lang={pageData.lang}
