@@ -5,12 +5,13 @@ import { translations } from '@/lib/translations'
 import { Phone, MapPin, Clock, Mail, AlertTriangle, Zap, Thermometer, Fan, Wrench } from 'lucide-react'
 import Image from 'next/image'
 
-export default function ContactPage({ params }: { params: { lang: 'en' | 'es' } }) {
-  const t = translations[params.lang]
+export default async function ContactPage({ params }: { params: Promise<{ lang: 'en' | 'es' }> }) {
+  const { lang } = await params
+  const t = translations[lang]
   
   return (
     <div className="min-h-screen">
-      <Header lang={params.lang} />
+      <Header lang={lang} />
       
       <main>
         {/* Hero Section */}
@@ -235,7 +236,7 @@ export default function ContactPage({ params }: { params: { lang: 'en' | 'es' } 
         </section>
       </main>
       
-      <Footer lang={params.lang} />
+      <Footer lang={lang} />
     </div>
   )
 }
