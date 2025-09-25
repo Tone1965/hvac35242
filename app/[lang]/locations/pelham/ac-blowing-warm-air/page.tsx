@@ -1,7 +1,6 @@
 import { Metadata } from 'next'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
-import EmergencyBar from '@/components/EmergencyBar'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
 import { Phone, AlertTriangle, CheckCircle, Clock, Wrench, Shield } from 'lucide-react'
@@ -72,7 +71,6 @@ export default function ACBlowingWarmAirPage({ params }: { params: { lang: 'en' 
 
       <div className="min-h-screen">
         <Header lang={lang} />
-        <EmergencyBar />
 
         {/* Hero Section */}
         <section className="py-16 bg-gradient-to-r from-red-600 to-orange-600 text-white">

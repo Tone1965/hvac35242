@@ -2,7 +2,6 @@ import { Metadata } from 'next'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import Hero from '@/components/Hero'
-import EmergencyBar from '@/components/EmergencyBar'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
 import { Phone, MapPin, Clock, Shield, Award, Users } from 'lucide-react'
@@ -140,7 +139,6 @@ export default function PelhamHVACPage({ params }: { params: { lang: 'en' | 'es'
 
       <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white">
         <Header lang={lang} />
-        <EmergencyBar />
 
         {/* Hero Section */}
         <section className="relative py-20 bg-gradient-to-r from-blue-600 to-blue-800 text-white">
