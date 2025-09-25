@@ -103,7 +103,7 @@ export default function LocalCategoryPage({
       {/* Hero Section */}
       <section className="relative min-h-[600px] flex items-center justify-center overflow-hidden">
         <Image
-          src="/images/hvac-hero.jpg"
+          src="/images/same-day-hvac-repair.jpg"
           alt="Local HVAC Services Birmingham"
           fill
           className="object-cover"

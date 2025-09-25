@@ -35,7 +35,7 @@ export default function BirminghamACRepairPage({ params }: { params: { lang: 'en
       {/* Hero Section */}
       <section className="relative h-[500px] flex items-center justify-center overflow-hidden">
         <Image
-          src="/images/same-day-hvac-repair.png"
+          src="/images/same-day-hvac-repair.jpg"
           alt={isSpanish ? "Reparación de AC Birmingham Alabama" : "Same Day AC Repair Birmingham Alabama"}
           fill
           className="object-cover"

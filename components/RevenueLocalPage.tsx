@@ -253,7 +253,6 @@ export default function RevenueLocalPage({ area, service, lang }: RevenueLocalPa
   const content = generateRevenueContent()
 
   // GENERATE STRATEGIC INTERNAL LINKS
-  const currentService = lang === 'en' ? service.en : service.es
   const allInternalLinks = generateInternalLinks(area.slug, currentService.slug, lang)
   const prioritizedLinks = prioritizeLinksForRevenue(allInternalLinks)
   const linkMagnets = generateLinkMagnets(area.slug, currentService.slug, lang)

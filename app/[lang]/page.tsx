@@ -43,7 +43,7 @@ export default function HomePage({ params }: { params: { lang: 'en' | 'es' } }) 
       {/* Enhanced Hero Section with Massive Typography */}
       <section className="relative min-h-[80vh] flex items-center justify-center overflow-hidden">
         <Image
-          src="/images/hvac-hero.jpg"
+          src="/images/same-day-hvac-repair.jpg"
           alt="HVAC Service Birmingham"
           fill
           className="object-cover scale-105"

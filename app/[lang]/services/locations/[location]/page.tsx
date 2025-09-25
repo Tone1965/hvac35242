@@ -63,7 +63,33 @@ const locations = [
   { slug: 'forestdale-north', name: 'Forestdale North' },
   { slug: 'eastwood', name: 'Eastwood' },
   { slug: 'fultondale-south', name: 'Fultondale South' },
-  { slug: 'clay-north', name: 'Clay North' }
+  { slug: 'clay-north', name: 'Clay North' },
+  // NEW: Shelby County Premium Neighborhoods
+  { slug: 'greystone', name: 'Greystone' },
+  { slug: 'oak-mountain', name: 'Oak Mountain' },
+  { slug: 'inverness', name: 'Inverness' },
+  { slug: 'brook-highland', name: 'Brook Highland' },
+  { slug: 'eagle-point', name: 'Eagle Point' },
+  { slug: 'meadowbrook', name: 'Meadowbrook' },
+  { slug: 'caldwell-crossing', name: 'Caldwell Crossing' },
+  { slug: 'indian-springs-village', name: 'Indian Springs Village' },
+  { slug: 'ross-bridge', name: 'Ross Bridge' },
+  { slug: 'highland-lakes', name: 'Highland Lakes' },
+  { slug: 'forest-park', name: 'Forest Park' },
+  { slug: 'saginaw', name: 'Saginaw' },
+  { slug: 'crestline', name: 'Crestline' },
+  { slug: 'crestwood', name: 'Crestwood' },
+  { slug: 'shoal-creek', name: 'Shoal Creek' },
+  { slug: 'liberty-park', name: 'Liberty Park' },
+  // NEW: Jefferson County Areas
+  { slug: 'mccalla', name: 'McCalla' },
+  { slug: 'midfield', name: 'Midfield' },
+  { slug: 'pleasant-grove', name: 'Pleasant Grove' },
+  { slug: 'montevallo', name: 'Montevallo' },
+  { slug: 'calera', name: 'Calera' },
+  { slug: 'wilsonville', name: 'Wilsonville' },
+  { slug: 'sumiton', name: 'Sumiton' },
+  { slug: 'morris', name: 'Morris' }
 ]
 
 export async function generateStaticParams() {
