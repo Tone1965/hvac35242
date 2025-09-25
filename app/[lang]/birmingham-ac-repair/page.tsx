@@ -9,8 +9,9 @@ export async function generateStaticParams() {
   return [{ lang: 'en' }, { lang: 'es' }]
 }
 
-export async function generateMetadata({ params }: { params: { lang: 'en' | 'es' } }): Promise<Metadata> {
-  const isSpanish = params.lang === 'es'
+export async function generateMetadata({ params }: { params: Promise<{ lang: 'en' | 'es' }> }): Promise<Metadata> {
+  const { lang } = await params
+  const isSpanish = lang === 'es'
   
   return {
     title: isSpanish 
@@ -25,12 +26,13 @@ export async function generateMetadata({ params }: { params: { lang: 'en' | 'es'
   }
 }
 
-export default function BirminghamACRepairPage({ params }: { params: { lang: 'en' | 'es' } }) {
-  const isSpanish = params.lang === 'es'
+export default async function BirminghamACRepairPage({ params }: { params: Promise<{ lang: 'en' | 'es' }> }) {
+  const { lang } = await params
+  const isSpanish = lang === 'es'
   
   return (
     <div className="min-h-screen">
-      <Header lang={params.lang} />
+      <Header lang={lang} />
       
       {/* Hero Section */}
       <section className="relative h-[500px] flex items-center justify-center overflow-hidden">
@@ -513,7 +515,7 @@ export default function BirminghamACRepairPage({ params }: { params: { lang: 'en
 
       </main>
       
-      <Footer lang={params.lang} />
+      <Footer lang={lang} />
     </div>
   )
 }
